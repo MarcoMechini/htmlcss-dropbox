@@ -102,17 +102,19 @@ XXXXXXHEROXXXXX
 XXXXXXXXXXXXXX*/
 
 .hero {
-    border: 10px solid black;
+    position: relative;
 }
 
-/* .hero::before {
+.hero::before {
+    content: "";
     position: absolute;
-    height: 90%;
+    height: 80%;
+    width: 100%;
     left: 0;
     top: 0;
-    content: "";
     background-color: red;
-} */
+    z-index: -1;
+}
 
 .hero-container {
     margin: 0 auto;
