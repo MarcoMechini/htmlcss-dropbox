@@ -137,7 +137,6 @@ XXXXXXXXXXXXXX*/
 }
 
 .cont-main {
-    display: none;
     margin: 0 auto;
     width: 80%;
     border: 1px solid black;
@@ -174,11 +173,18 @@ footer {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer>div {
+    padding: 16px 0;
 }
 
 .footer-up {
-    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -188,8 +194,7 @@ footer {
 }
 
 .footer-bott {
-    justify-content: flex-start;
+    width: fit-content;
     background-color: green;
+    border-top: 1px solid #fff;
 }
-
-/* non ne posso più di fare i blocchi colorati */
