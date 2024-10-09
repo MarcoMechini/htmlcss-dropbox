@@ -5,9 +5,191 @@
 }
 
 :root {
-    --deb-bg-header1: red;
-    --deb-bg-header1: blue;
+    --deb-bg-header: red;
+    --deb-bg-header2: blue;
 
 
+    --deb-bg-hero: green;
+    --deb-bg-hero2: yellow;
+    --deb-bg-hero3: skyblue;
 
+    --deb-bg-column: pink;
+    --deb-bg-sect: lightgreen;
+    --deb-bg-card: gray;
+
+    --deb-bg-footer: #000;
+    --deb-bg-footer-list: violet;
 }
+
+/*XXXXXXXXXXXXX
+XXXXXGENRALXXXX
+XXXXXXXXXXXXXX*/
+
+.container-all {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.height40 {
+    height: 100px;
+}
+
+.height100 {
+    height: 200px;
+    border: 1px solid;
+}
+
+.height200 {
+    height: 400px;
+}
+
+.width40 {
+    width: 40px;
+}
+
+.width40p {
+    width: 40%;
+}
+
+.width60p {
+    width: 60%;
+}
+
+.width-3 {
+    width: calc(95% / 3);
+}
+
+.width100pc {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/*XXXXXXXXXXXXX
+XXXXXHEADERXXXX
+XXXXXXXXXXXXXX*/
+
+.header {
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--deb-bg-header);
+}
+
+.header ul {
+    background-color: var(--deb-bg-header2);
+}
+
+/*XXXXXXXXXXXXX
+XXXXXMAINXXXX
+XXXXXXXXXXXXXX*/
+
+
+
+/*XXXXXXXXXXXXX
+XXXXXXHEROXXXXX
+XXXXXXXXXXXXXX*/
+
+.hero {
+    margin: 0 auto;
+    height: 200px;
+    width: 90%;
+    background-color: var(--deb-bg-hero);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-d {
+    border: 1px solid #000;
+    background-color: var(--deb-bg-hero2);
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.hero-comp {
+    border: 1px solid #000;
+    background-color: var(--deb-bg-hero3);
+    width: 45%;
+}
+
+/*XXXXXXXXXXXXX
+XXXCONTAINERXXX
+XXXXXXXXXXXXXX*/
+
+.back {
+    gap: 20px;
+    background-color: var(--deb-bg-sect);
+}
+
+.cont-main {
+    display: none;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.cont-main>* {
+    padding: 12px;
+}
+
+.grid {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row {
+    background-color: blueviolet;
+}
+
+.img {
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.card {
+    background-color: var(--deb-bg-sect);
+    border: 1px solid red;
+}
+
+/*XXXXXXXXXXXXX
+XXXXXFOOTERXXXX
+XXXXXXXXXXXXXX*/
+
+footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-up {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-up div {
+    background-color: aquamarine;
+}
+
+.footer-bott {
+    justify-content: flex-start;
+    background-color: green;
+}
+
+/* non ne posso più di fare i blocchi colorati */
