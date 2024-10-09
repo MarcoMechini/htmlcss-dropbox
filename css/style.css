@@ -81,6 +81,7 @@ XXXXXHEADERXXXX
 XXXXXXXXXXXXXX*/
 
 .header {
+    display: none;
     justify-content: space-between;
     width: 100vw;
     background-color: var(--deb-bg-header);
@@ -101,32 +102,31 @@ XXXXXXHEROXXXXX
 XXXXXXXXXXXXXX*/
 
 .hero {
+    border: 10px solid black;
+}
+
+/* .hero::before {
+    position: absolute;
+    height: 90%;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: red;
+} */
+
+.hero-container {
     margin: 0 auto;
-    height: 200px;
     width: 90%;
     background-color: var(--deb-bg-hero);
     justify-content: center;
     align-items: center;
     gap: 20px;
-    position: relative;
-}
-
-.hero::before {
-    position: absolute;
-    width: 100vw;
-    height: 400px;
-    left: 0;
-    top: 0;
-    content: "";
-    height: 10px;
-    background-color: red;
 }
 
 .hero-d {
     border: 1px solid #000;
     background-color: var(--deb-bg-hero2);
     width: 100%;
-
     justify-content: center;
     align-items: center;
     gap: 10px;
