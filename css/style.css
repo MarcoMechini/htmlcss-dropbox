@@ -108,6 +108,18 @@ XXXXXXXXXXXXXX*/
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
+}
+
+.hero::before {
+    position: absolute;
+    width: 100vw;
+    height: 400px;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 10px;
+    background-color: red;
 }
 
 .hero-d {
