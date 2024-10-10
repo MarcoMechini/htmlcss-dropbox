@@ -191,6 +191,10 @@ XXXXXXXXXXXXXX*/
 
 /*XXXXXXTOWERXXXXXX*/
 
+.tower-cont {
+    gap: 20px;
+}
+
 .tower {
     border: 1px solid var(--border-color);
 }
@@ -219,11 +223,11 @@ XXXXXXXXXXXXXX*/
     gap: 6px;
 } */
 
-.cost {
+.tower-h .cost {
     font-weight: 600;
 }
 
-.date {
+.tower-h .date {
     color: gray;
 }
 
@@ -231,15 +235,24 @@ XXXXXXXXXXXXXX*/
     gap: 20px;
 }
 
-/* .tower ul span {
-    display: inline-block;
-} */
+.tower-ul li,
+.tower-f li {
+    display: flex;
+}
+
+.tower ul span {
+    padding: 0 6px;
+}
 
 .tower-m .a {
     text-decoration: underline;
 }
 
-.tower-f {}
+.tower-f i {
+    color: lightskyblue;
+}
+
+/* pausa caffe */
 
 /* 
 <i class="fa-solid fa-users"></i>
@@ -249,9 +262,6 @@ XXXXXXXXXXXXXX*/
 <i class="fa-solid fa-check"></i>
 */
 
-.tower-cont {
-    gap: 20px;
-}
 
 .cont-main>* {
     padding: 12px;
