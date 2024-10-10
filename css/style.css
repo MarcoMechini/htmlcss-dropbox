@@ -307,10 +307,8 @@ XXXXXFOOTERXXXX
 XXXXXXXXXXXXXX*/
 
 footer {
-
     background-color: #000;
-    display: none;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
 }
 
@@ -328,8 +326,17 @@ footer {
     justify-content: space-between;
 }
 
-.footer-up div {
-    background-color: aquamarine;
+.footer-up h3,
+.footer-up a {
+    color: #fff;
+}
+
+.footer-up h3 {
+    padding: 8px 2px;
+}
+
+.footer-up li {
+    padding: 2px;
 }
 
 .footer-bott {
