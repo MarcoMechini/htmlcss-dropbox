@@ -102,6 +102,10 @@ XXXXXXXXXXXXXX*/
     gap: 20px;
 }
 
+.header li:hover a {
+    text-decoration: underline;
+}
+
 
 /*XXXXXXXXXXXXX
 XXXXXMAINXXXX
@@ -329,6 +333,10 @@ input[type="radio"] {
 .grid {
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.grid p {
+    font-size: 0.8rem;
 }
 
 .card {
