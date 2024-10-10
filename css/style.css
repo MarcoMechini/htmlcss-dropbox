@@ -81,7 +81,6 @@ XXXXXHEADERXXXX
 XXXXXXXXXXXXXX*/
 
 .header {
-    display: none;
     justify-content: space-between;
     width: 100vw;
     background-color: var(--deb-bg-header);
@@ -95,6 +94,11 @@ XXXXXXXXXXXXXX*/
 XXXXXMAINXXXX
 XXXXXXXXXXXXXX*/
 
+.center-main {
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid black;
+}
 
 
 /*XXXXXXXXXXXXX
@@ -112,7 +116,7 @@ XXXXXXXXXXXXXX*/
     width: 100%;
     left: 0;
     top: 0;
-    background-color: red;
+    background-color: gray;
     z-index: -1;
 }
 
@@ -150,11 +154,6 @@ XXXXXXXXXXXXXX*/
     background-color: var(--deb-bg-sect);
 }
 
-.cont-main {
-    margin: 0 auto;
-    width: 80%;
-    border: 1px solid black;
-}
 
 .cont-main>* {
     padding: 12px;
