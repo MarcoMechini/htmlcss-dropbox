@@ -5,11 +5,16 @@
 }
 
 :root {
-    --deb-bg-header: red;
-    --deb-bg-header2: blue;
+
+    /* colore btn a #0061fd */
+    /* sfondo hero #b4d0e6 */
+    /* testo #000000 */
+
+    --bk-btn: #0061fd;
+    --bg-hero: #b4d0e6;
+    --text-0: #000;
 
 
-    --deb-bg-hero: green;
     --deb-bg-hero2: yellow;
     --deb-bg-hero3: skyblue;
 
@@ -24,11 +29,6 @@
 /*XXXXXXXXXXXXX
 XXXXXGENRALXXXX
 XXXXXXXXXXXXXX*/
-
-.container-all {
-    width: 80%;
-    margin: 0 auto;
-}
 
 .flex {
     display: flex;
@@ -56,15 +56,15 @@ XXXXXXXXXXXXXX*/
     width: 40px;
 }
 
-.width40p {
+.col-40 {
     width: 40%;
 }
 
-.width60p {
+.col-60 {
     width: 60%;
 }
 
-.width-3 {
+.col-3 {
     width: calc(95% / 3);
 }
 
@@ -76,25 +76,47 @@ li {
     list-style: none;
 }
 
+.btn {
+    background-color: var(--bk-btn);
+    color: #fff;
+    padding: 4px 8px;
+}
+
+img {
+    max-width: 600px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 /*XXXXXXXXXXXXX
 XXXXXHEADERXXXX
 XXXXXXXXXXXXXX*/
 
 .header {
+    height: 50px;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
-    background-color: var(--deb-bg-header);
+    padding: 0 20px;
 }
 
 .header ul {
-    background-color: var(--deb-bg-header2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
 
 /*XXXXXXXXXXXXX
 XXXXXMAINXXXX
 XXXXXXXXXXXXXX*/
 
-.center-main {
+.container {
     margin: 0 auto;
     width: 80%;
     border: 1px solid black;
@@ -116,42 +138,69 @@ XXXXXXXXXXXXXX*/
     width: 100%;
     left: 0;
     top: 0;
-    background-color: gray;
+    background-color: var(--bg-hero);
     z-index: -1;
 }
 
 .hero-container {
     margin: 0 auto;
-    width: 90%;
-    background-color: var(--deb-bg-hero);
+    width: 80%;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
 .hero-d {
-    border: 1px solid #000;
-    background-color: var(--deb-bg-hero2);
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     padding: 10px 0;
 }
 
-.hero-comp {
-    border: 1px solid #000;
-    background-color: var(--deb-bg-hero3);
-    width: 45%;
+.hero-bottom {
+    gap: 10px;
 }
+
+.hero .col-40 {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+/*XXXXXXXXXXXXX
+XXXXXXXXXXXXXXX
+WIP
+XXXXXXXXXXXXXXX
+XXXXXXXXXXXXXX*/
+
+
+
 
 /*XXXXXXXXXXXXX
 XXXCONTAINERXXX
 XXXXXXXXXXXXXX*/
 
+/*XXXXXXTROVAXXXXXX*/
+
+.container h2.row {
+    padding: 12px 0;
+}
+
+/*XXXXXXTOWERXXXXXX*/
+
+.type {
+    border: 1px solid black;
+}
+
+/* <i class="fa-solid fa-users"></i>
+<i class="fa-solid fa-building"></i> 
+<i class="fa-solid fa-share-nodes"></i>
+<i class="fa-solid fa-folder"></i>
+*/
+
 .back {
     gap: 20px;
-    background-color: var(--deb-bg-sect);
 }
 
 
@@ -183,8 +232,10 @@ XXXXXFOOTERXXXX
 XXXXXXXXXXXXXX*/
 
 footer {
+
     background-color: #000;
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
 }
 
