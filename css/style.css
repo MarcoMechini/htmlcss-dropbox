@@ -28,6 +28,10 @@
     --deb-bg-footer-list: violet;
 }
 
+img {
+    max-width: 400px;
+}
+
 /*XXXXXXXXXXXXX
 XXXXXGENRALXXXX
 XXXXXXXXXXXXXX*/
@@ -82,10 +86,6 @@ li {
     background-color: var(--bk-btn);
     color: #fff;
     padding: 4px 8px;
-}
-
-img {
-    max-width: 600px;
 }
 
 a {
@@ -205,8 +205,8 @@ XXXXXXXXXXXXXX*/
     padding: 8px 0;
 }
 
-.tower-core {
-    border-top: 1px solid var(--border-color);
+.type {
+    border-bottom: 1px solid var(--border-color);
 }
 
 .tower-h,
@@ -252,8 +252,6 @@ XXXXXXXXXXXXXX*/
     color: lightskyblue;
 }
 
-/* pausa caffe */
-
 /* 
 <i class="fa-solid fa-users"></i>
 <i class="fa-solid fa-building"></i> 
@@ -262,10 +260,34 @@ XXXXXXXXXXXXXX*/
 <i class="fa-solid fa-check"></i>
 */
 
+/*XXXXXXENTERPRISEXXXXXX*/
 
-.cont-main>* {
-    padding: 12px;
+.enterp-core {
+    padding: 28px 20px;
 }
+
+.enterp-core span {
+    font-weight: 600;
+    padding: 12px 0;
+    display: inline-block;
+}
+
+.enterp-core p {
+    font-size: 0.8rem;
+    padding: 24px 0 12px;
+}
+
+/*XXXXXXPARTNERXXXXXX*/
+
+.partner .col-60 img {
+    max-width: 100%;
+}
+
+.partner .col-40 {
+    padding: 24px 12px;
+}
+
+/*XXXXXXGRIDXXXXXX*/
 
 .grid {
     justify-content: center;
@@ -276,13 +298,7 @@ XXXXXXXXXXXXXX*/
     background-color: blueviolet;
 }
 
-.img {
-    background-color: aquamarine;
-    border: 1px solid black;
-}
-
 .card {
-    background-color: var(--deb-bg-sect);
     border: 1px solid red;
 }
 
