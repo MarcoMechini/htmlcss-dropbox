@@ -28,9 +28,10 @@
         </ul>
     </header>
     <main>
+        <!-- HERO -->
         <section class="hero">
             <div class="hero-container flex-column">
-                <div class="hero-d hero-up">
+                <div class="hero-d hero-top">
                     <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 </div>
                 <div class="flex hero-d hero-bottom">
@@ -40,14 +41,29 @@
                             consectetur quis!</p>
                         <a class="btn" href="#">Inzia la prova gratuita</a>
                         <span>Annulla in qualsiasi momento</span>
-                        <span>&DownArrow;</span>
+                        <i class="fa-solid fa-arrow-down"></i>
                     </div>
                     <div class="col-60 hero-comp"><img src="./img/jumbo.png" alt=""></div>
                 </div>
             </div>
         </section>
+        <!-- /HERO -->
+
         <section class="container">
-            <h2 class="width100pc  row">Trova il piano di busines che fa per</h2>
+            <div class="row flex-column">
+                <span>Trova il piano di busines che fa per te</span>
+                <div class="label">
+                    <label>
+                        <input type="radio" name="billing" value="monthly" checked>
+                        Fatturazione mensile
+                    </label>
+                    <label>
+                        <input type="radio" name="billing" value="annual">
+                        Fatturazione annuale
+                    </label>
+                </div>
+            </div>
+            </div>
         </section>
         <section class="container">
             <section class="flex-column">
@@ -153,6 +169,7 @@
                             <div class="tower-h">
                                 <h4>Enterprise</h4>
                                 <span class="cost">Contattaci</span>
+                                <span class="date">/utente/mese</span>
                             </div>
                             <ul class="tower-ul">
                                 <li><i class="fa-solid fa-user"></i><span>1 o più utenti</span></li>
@@ -207,10 +224,11 @@
             </div>
         </section>
         <!-- /ENTERPRISE -->
+        <!-- PARTNER -->
         <section class="container">
             <div class="flex partner">
-                <div class="col-60"><img src="./img/partner.png" alt=""></div>
-                <div class="col-40">
+                <div class="img"><img src="./img/partner.png" alt=""></div>
+                <div class="content">
                     <h4>Entra in contatto con un partner dropbox</h4>
                     <p>rova un partner dropbox e hellosign di fiducia. ottieni le soluzioni e i
                         servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione,
@@ -219,8 +237,14 @@
                 </div>
             </div>
         </section>
+        <!-- /PARTNER -->
         <section class="container">
-            <h3>Esegui piu operazioni copn Dropbox Busines</h3>
+            <div class="row">
+                <span>
+                    Esegui piu operazioni copn Dropbox Busines
+                </span>
+            </div>
+            <!-- GRID -->
             <div class="flex grid">
                 <div class="col-3 flex-column card"><img src="./img/business-feature-switching-tools.png" alt="">
                     <h4>
@@ -284,7 +308,13 @@
                     </p>
                 </div>
             </div>
-            <div class="row">Piu di 500</div>
+            <!-- /GRID -->
+            <div class="row">
+                <span>
+                    Piu di 500.000 team utilizzano <br>dropbox buisiness
+                </span>
+                <a href="#"></a>
+            </div>
         </section>
     </main>
     <footer>
@@ -342,9 +372,9 @@
                 </div>
             </div>
             <div class="footer-bott">
-                <i></i>
-                <span>italiano</span>
-                <i>freccia</i>
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Italiano</span>
+                <i class="fa-solid fa-caret-up"></i>
             </div>
         </div>
     </footer>

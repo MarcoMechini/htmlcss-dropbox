@@ -5,36 +5,23 @@
 }
 
 :root {
-
-    /* colore btn a #0061fd */
-    /* sfondo hero #b4d0e6 */
-    /* testo #000000 */
-
     --bk-btn: #0061fd;
     --bg-hero: #b4d0e6;
     --text-0: #000;
     --border-color: lightgray;
-
-
-    /* DEBUG */
-    --deb-bg-hero2: yellow;
-    --deb-bg-hero3: skyblue;
-
-    --deb-bg-column: pink;
-    --deb-bg-sect: lightgreen;
-    --deb-bg-card: gray;
-
-    --deb-bg-footer: #000;
-    --deb-bg-footer-list: violet;
 }
 
 img {
-    max-width: 400px;
+    max-width: 600px;
 }
 
 /*XXXXXXXXXXXXX
 XXXXXGENRALXXXX
 XXXXXXXXXXXXXX*/
+
+body {
+    font-family: sans-serif;
+}
 
 .flex {
     display: flex;
@@ -43,23 +30,6 @@ XXXXXXXXXXXXXX*/
 .flex-column {
     display: flex;
     flex-direction: column;
-}
-
-.height40 {
-    height: 100px;
-}
-
-.height100 {
-    height: 200px;
-    border: 1px solid;
-}
-
-.height200 {
-    height: 400px;
-}
-
-.width40 {
-    width: 40px;
 }
 
 .col-40 {
@@ -83,9 +53,12 @@ li {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--bk-btn);
     color: #fff;
-    padding: 4px 8px;
+    padding: 0.8em 1em;
 }
 
 a {
@@ -93,11 +66,27 @@ a {
     color: #000;
 }
 
+hr {
+    width: 20%;
+    margin-left: 10%;
+}
+
+.row {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.row span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 /*XXXXXXXXXXXXX
 XXXXXHEADERXXXX
 XXXXXXXXXXXXXX*/
 
 .header {
+    font-size: 0.8rem;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -121,7 +110,7 @@ XXXXXXXXXXXXXX*/
 .container {
     margin: 0 auto;
     width: 80%;
-    border: 1px solid black;
+    padding: 24px 0;
 }
 
 
@@ -146,7 +135,7 @@ XXXXXXXXXXXXXX*/
 
 .hero-container {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -155,6 +144,11 @@ XXXXXXXXXXXXXX*/
 .hero-d {
     width: 100%;
     padding: 10px 0;
+}
+
+.hero-top h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 .hero-bottom {
@@ -166,18 +160,17 @@ XXXXXXXXXXXXXX*/
     gap: 20px;
 }
 
+.hero .col-40 span {
+    font-size: 0.8rem;
+}
+
+.hero .col-40 i {
+    font-size: 1.5rem;
+}
+
 .hero a {
     text-decoration: none;
 }
-
-/*XXXXXXXXXXXXX
-XXXXXXXXXXXXXXX
-WIP
-XXXXXXXXXXXXXXX
-XXXXXXXXXXXXXX*/
-
-
-
 
 /*XXXXXXXXXXXXX
 XXXCONTAINERXXX
@@ -185,8 +178,21 @@ XXXXXXXXXXXXXX*/
 
 /*XXXXXXTROVAXXXXXX*/
 
-.container h2.row {
-    padding: 12px 0;
+.container .row {
+    padding: 48px 0 24px;
+}
+
+.billing-options {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
 }
 
 /*XXXXXXTOWERXXXXXX*/
@@ -195,8 +201,10 @@ XXXXXXXXXXXXXX*/
     gap: 20px;
 }
 
+
 .tower {
     border: 1px solid var(--border-color);
+    font-size: 0.8rem;
 }
 
 .type div {
@@ -218,10 +226,6 @@ XXXXXXXXXXXXXX*/
     flex-direction: column;
     gap: 6px;
 }
-
-/* .tower-h {
-    gap: 6px;
-} */
 
 .tower-h .cost {
     font-weight: 600;
@@ -248,8 +252,20 @@ XXXXXXXXXXXXXX*/
     text-decoration: underline;
 }
 
+.tower-m span {
+    padding: 1em 0 0;
+}
+
 .tower-f i {
     color: lightskyblue;
+}
+
+.tower-f li {
+    padding: 0.6em 0;
+}
+
+.tower:last-child .date {
+    color: #fff;
 }
 
 /* 
@@ -261,6 +277,10 @@ XXXXXXXXXXXXXX*/
 */
 
 /*XXXXXXENTERPRISEXXXXXX*/
+
+.enterprise {
+    border: 1px solid lightgray;
+}
 
 .enterp-core {
     padding: 28px 20px;
@@ -279,12 +299,29 @@ XXXXXXXXXXXXXX*/
 
 /*XXXXXXPARTNERXXXXXX*/
 
-.partner .col-60 img {
-    max-width: 100%;
+.partner {
+    display: flex;
 }
 
-.partner .col-40 {
-    padding: 24px 12px;
+.partner .content {
+    padding: 4em 2em;
+}
+
+.partner .content p {
+    padding: 1.5em 0;
+    font-size: 1.1rem;
+}
+
+.partner h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.partner .content .btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    width: max-content;
 }
 
 /*XXXXXXGRIDXXXXXX*/
@@ -294,12 +331,8 @@ XXXXXXXXXXXXXX*/
     flex-wrap: wrap;
 }
 
-.row {
-    background-color: blueviolet;
-}
-
 .card {
-    border: 1px solid red;
+    padding: 1em 1.5em;
 }
 
 /*XXXXXXXXXXXXX
@@ -340,7 +373,7 @@ footer {
 }
 
 .footer-bott {
+    color: #fff;
     width: fit-content;
-    background-color: green;
     border-top: 1px solid #fff;
 }
