@@ -13,8 +13,10 @@
     --bk-btn: #0061fd;
     --bg-hero: #b4d0e6;
     --text-0: #000;
+    --border-color: lightgray;
 
 
+    /* DEBUG */
     --deb-bg-hero2: yellow;
     --deb-bg-hero3: skyblue;
 
@@ -189,20 +191,67 @@ XXXXXXXXXXXXXX*/
 
 /*XXXXXXTOWERXXXXXX*/
 
-.type {
-    border: 1px solid black;
+.tower {
+    border: 1px solid var(--border-color);
 }
 
-/* <i class="fa-solid fa-users"></i>
-<i class="fa-solid fa-building"></i> 
-<i class="fa-solid fa-share-nodes"></i>
-<i class="fa-solid fa-folder"></i>
-*/
+.type div {
+    width: max-content;
+    margin: 0 auto;
+    padding: 8px 0;
+}
 
-.back {
+.tower-core {
+    border-top: 1px solid var(--border-color);
+}
+
+.tower-h,
+.tower-ul,
+.tower-m,
+.tower-f {
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* .tower-h {
+    gap: 6px;
+} */
+
+.cost {
+    font-weight: 600;
+}
+
+.date {
+    color: gray;
+}
+
+.tower-ul {
     gap: 20px;
 }
 
+/* .tower ul span {
+    display: inline-block;
+} */
+
+.tower-m .a {
+    text-decoration: underline;
+}
+
+.tower-f {}
+
+/* 
+<i class="fa-solid fa-users"></i>
+<i class="fa-solid fa-building"></i> 
+<i class="fa-solid fa-share-nodes"></i>
+<i class="fa-solid fa-folder"></i>
+<i class="fa-solid fa-check"></i>
+*/
+
+.tower-cont {
+    gap: 20px;
+}
 
 .cont-main>* {
     padding: 12px;
